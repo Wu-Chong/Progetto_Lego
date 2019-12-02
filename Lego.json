@@ -1,22 +1,28 @@
 {
-    "Istrzuzioni" : [
+    "Istruzioni" : [
         {
-            "Set Number": "LEGO 7779",
-            "Set Theme": "Batman",
-            "Set Name": "Catwoman Pursuit",
-            "Year": 2006
+            "id": 1,
+            "SetNumber": "LEGO 7779",
+            "SetTheme": "Batman",
+            "SetName": "Catwoman Pursuit",
+            "Year": 2006,
+            "imgSrc": "https://letsbuilditagain.com/instructions/7779/"
         },
         {
-            "Set Number": "LEGO 7780",
-            "Set Theme": "Batman",
-            "Set Name": "Hunt for killer Croc",
-            "Year": 2006
+            "id": 2,
+            "SetNumber": "LEGO 7780",
+            "SetTheme": "Batman",
+            "SetName": "Hunt for killer Croc",
+            "Year": 2006,
+            "imgSrc": "https://letsbuilditagain.com/instructions/7780/"
         },
         {
-            "Set Number": "LEGO 7781",
-            "Set Theme": "Batman",
-            "Set Name": "Two-Face Escape",
-            "Year": 2006
+            "id": 3,
+            "SetNumber": "LEGO 7781",
+            "SetTheme": "Batman",
+            "SetName": "Two-Face Escape",
+            "Year": 2006,
+            "imgSrc": "https://letsbuilditagain.com/instructions/7780/"
         }
     ]
 }
