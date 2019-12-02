@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Wu-Chong/Progetto_Lego/issues"
   },
-  "homepage": "https://github.com/Wu-Chong/Progetto_Lego#readme"
+  "homepage": "https://github.com/Wu-Chong/Progetto_Lego#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1",
+    "pug": "^2.0.4"
+  }
 }
