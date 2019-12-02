@@ -1,15 +1,28 @@
 html
  head
-  title LEGO
+  title Batman
   link(rel='stylesheet', href='/css/style.css')
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:10')
   meta(name="viewport" content="width=device-width, initial-scale=1")
  body
-  header.header Ciaoneeeee
+  header.header #{title}
   div.container
    each giochi in costruzioni
      div.giochi
          div.giochi-image(style=`background: url('/images/${giochi.imgSrc}') top center no-repeat; background-size: cover;`)
          h2.giochi-name
            | #{giochi.SetName}
-         a(href=`/istruzioni?id=${giochi.id}`)
-           | Vedi istruzioni
+         a(href=`/costruzioni?id=${giochi.id}`)
+           | Approfondisci
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br
+  br

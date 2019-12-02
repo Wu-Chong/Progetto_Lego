@@ -1,42 +1,22 @@
-html {
-  box-sizing: border-box;
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrant', sans-serif;
+    font-weight: lighter;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit; /* [1] */
-  margin: 0;
-  padding: 0;
+header{
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: green;
+    padding: 50px;
+    text-align: center;
 }
 
-
-
-/* FONTS
-   ========================================================================== */
-
-body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; /* [2] */
-}
-
-
-
-/* Header
-   ========================================================================== */
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  background-color: goldenrod;
-  color: #FFFFFF;
-  margin-bottom: 50px;
-}
-
-
-
-/* Homepage Container
-   ========================================================================== */
 
 .container {
   width: 960px;
@@ -46,10 +26,6 @@ body {
   grid-gap: 20px;
 }
 
-
-
-/* Profile Card
-   ========================================================================== */
 
 .giochi {
   text-align: center;
