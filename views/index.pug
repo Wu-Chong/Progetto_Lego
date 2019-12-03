@@ -9,7 +9,7 @@ html
   div.container
    each giochi in costruzioni
      div.giochi
-         div.giochi-image(style=`background: url('/images/${giochi.imgSrc}') top center no-repeat; background-size: cover;`)
+         div.giochi-image(style=`background: url('${giochi.imgSrc}') top center no-repeat; background-size: cover;`)
          h2.giochi-name
            | #{giochi.SetName}
          a(href=`/costruzioni?id=${giochi.id}`)
