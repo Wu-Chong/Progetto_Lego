@@ -11,6 +11,15 @@ app.get('/', function (req, res) {
  });
 });
 
+app.get('/costruzione', (req, res) => {
+  const giochi = lego.Istruzioni.find((p) => p.id == req.query.id);
+  console.log(giochi);
+  res.render('costruzione', {
+    title: ` ${giochi.SetName} ${giochi.SetNumber}`,
+    giochi,
+  });
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });

@@ -1,0 +1,14 @@
+doctype html
+html
+ head
+   title Batman
+   link(rel='stylesheet', href='/css/style.css')
+   meta(name="viewport" content="width=device-width, initial-scale=1")
+ body
+   header.header
+         h1 #{title}
+   div.giochi
+     div.giochi-image(style=`background: url('${giochi.imgSrc}') top center no-repeat; `)
+     div.giochi-details
+       h1.giochi-name
+         | #{giochi.SetName} #{giochi.SetTheme}
