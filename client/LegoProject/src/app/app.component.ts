@@ -11,13 +11,14 @@ import {Giochi} from './giochi.model';
 export class AppComponent {
   title = 'LegoProject';
   loading: Boolean = false;
-  data : object;
+  data : string[];
   o:Observable<Object>;
+  private BASE_URL:string = '/api';
   constructor(private http: HttpClient){
 
   }
 
-  makeRequest(): void {
+  /*makeRequest(): void {
     this.loading = true;
     this.o = this.http.get('https://3000-c79fc237-cbb2-40f2-a58c-e74b3d5b1f00.ws-eu01.gitpod.io/api/costruzione');
     this.o.subscribe(this.getData);
@@ -27,12 +28,14 @@ export class AppComponent {
    {
      this.data = d; //Notifico l’oggetto ricevuto dal server
      this.loading = false;  // Notifico che ho ricevuto i dati
-   }
+   }*/
 
-    /*makeTypedRequest() : void
-  {
-    //oFoo : Observable<Foo[]>; va dichiarato tra gli attributi della classe
-    this.oGiochi = this.http.get<Giochi[]>('https://3000-c79fc237-cbb2-40f2-a58c-e74b3d5b1f00.ws-eu01.gitpod.io/api/costruzione');
-    this.oGiochi.subscribe(data => {this.giochiData = data;});
-  }*/
+   ngOnInit(): void {
+
+      this.http.get('https://3000-c79fc237-cbb2-40f2-a58c-e74b3d5b1f00.ws-eu01.gitpod.io/api/costruzione').subscribe(data => {
+        console.log(data['Istruzione'])
+        this.data = data['Istruzione'];
+      });
+    }
+
 }
