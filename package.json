@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Wu-Chong/Progetto_Lego#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "nodejs": "0.0.0",
     "nodemon": "^2.0.1",
     "pug": "^2.0.4"
   }

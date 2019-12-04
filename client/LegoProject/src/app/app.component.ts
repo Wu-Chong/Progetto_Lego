@@ -10,6 +10,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'LegoProject';
   loading: Boolean = false;
+  data : object;
   o:Observable<Object>;
   constructor(private http: HttpClient){
 
