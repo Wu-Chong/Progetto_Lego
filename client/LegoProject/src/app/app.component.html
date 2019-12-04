@@ -1,11 +1,13 @@
-<header class="header"> Ciaone</header>
-<div class="container">
-  <div *ngFor="let giochi in data">
+<header class="header">{{title}}</header>
+<div class="jumbotron">
+  <a href="https://letsbuilditagain.com/instructions/7779/001.jpg">Ciao</a>
+</div>
+  <div *ngFor="let gioco of data">
     <div class="giochi">
-      <div class="giochi-image" style="background: url('${{giochi.imgSrc}}') top center no-repeat; background-size: cover;">
-        <h2 class="giochi-name"> {{giochi.SetName}} </h2>
-        <a href="/costruzione?id=${{giochi.id}}">Approfondisci</a>
+      <div class="giochi-image" style="background: url('${gioco.imgSrc}') top center no-repeat; background-size: cover;">
+        <h2 class="giochi-name"> {{gioco.SetName}} </h2>
+        <a href="/costruzione?id=${gioco.id}">Approfondisci</a>
       </div>
     </div>
   </div>
-</div>
+
