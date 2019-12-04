@@ -1,4 +1,11 @@
-
-<div *ngFor="let cose of data">
-   <h3>{{cose | json}}</h3>
+<header class="header"> Ciaone</header>
+<div class="container">
+  <div *ngFor="let giochi in data">
+    <div class="giochi">
+      <div class="giochi-image" style="background: url('${{giochi.imgSrc}}') top center no-repeat; background-size: cover;">
+        <h2 class="giochi-name"> {{giochi.SetName}} </h2>
+        <a href="/costruzione?id=${{giochi.id}}">Approfondisci</a>
+      </div>
+    </div>
+  </div>
 </div>

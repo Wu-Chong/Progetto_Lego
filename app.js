@@ -28,11 +28,13 @@ app.get('/costruzione', (req, res) => {
 });
 
 app.get('/api/costruzione',function(req,res){
- res.sendFile(path.join(__dirname+'/Lego.json'));
+ res.setHeader('Content-Type', 'application/json');
+    res.send(JSON.stringify(lego));
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
 
+const port = process.env.PORT || '3000';
+app.set('port', port);
+
+app.listen(port,  () => {console.log('Example app listening on port 3000!');});
 
