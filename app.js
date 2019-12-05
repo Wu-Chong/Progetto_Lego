@@ -29,7 +29,7 @@ app.get('/costruzione', (req, res) => {
 
 app.get('/api/costruzione',function(req,res){
  res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(lego));
+    res.send(lego);
 });
 
 
